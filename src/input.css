@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Coba hapus dulu bagian option-nya agar jalan */
+@plugin "@egoist/tailwindcss-icons"; 
+
+@theme {
+  --color-kusaku: #1FBBA6;
+}
