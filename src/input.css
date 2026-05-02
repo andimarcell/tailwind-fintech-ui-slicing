@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Red+Rose:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap');
 @import "tailwindcss";
 
 /* Coba hapus dulu bagian option-nya agar jalan */
-@plugin "@egoist/tailwindcss-icons"; 
+@plugin "@egoist/tailwindcss-icons";
 
 @theme {
+  /* Colors */
   --color-kusaku: #1FBBA6;
+  --color-dark-green: #118871;
+  --color-brands-dark-green: #118871;
+  --color-brands-light-green: #15AB8E;
+
+  /* Animations */
+  --animate-slide-top: slide-top 0.5s cubic-bezier(0.57, 0.14, 0, 1.07) both;
+  --animate-slide-bottom: slide-bottom 1s cubic-bezier(0.57, 0.14, 0, 1.07) both;
+
+  /* Font Sizes */
+  --text-icon-sm: 20px;
+  --text-icon-md: 24px;
+  --text-icon-lg: 28px;
+  --text-icon-xl: 32px;
+
+  --font-sans: "Inter", sans-serif;
+  --font-brands: "Red Rose", serif;
+
+    @keyframes slide-top {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes slide-bottom {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
 }
