@@ -8,15 +8,23 @@
     --font-sans: "Inter", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-red-200: oklch(88.5% 0.062 18.334);
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-green-50: oklch(98.2% 0.018 155.826);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-emerald-50: oklch(97.9% 0.021 166.113);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-blue-50: oklch(97% 0.014 254.604);
+    --color-pink-300: oklch(82.3% 0.12 346.018);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
+    --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-pink-600: oklch(59.2% 0.249 0.584);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -40,7 +48,6 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -223,6 +230,9 @@
   .inset-e-0 {
     inset-inline-end: calc(var(--spacing) * 0);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -267,6 +277,9 @@
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-23 {
+    margin-top: calc(var(--spacing) * 23);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -332,6 +345,19 @@
     mask-size: 100% 100%;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7z'/%3E%3C/svg%3E");
   }
+  .i-material-symbols-close-rounded {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z'/%3E%3C/svg%3E");
+  }
   .i-material-symbols-download-rounded {
     display: inline-block;
     width: 1em;
@@ -344,6 +370,19 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M11.625 15.513q-.175-.063-.325-.213l-3.6-3.6q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L11 12.15V5q0-.425.288-.712T12 4t.713.288T13 5v7.15l1.875-1.875q.3-.3.713-.288t.712.313q.275.3.288.7t-.288.7l-3.6 3.6q-.15.15-.325.213t-.375.062t-.375-.062M6 20q-.825 0-1.412-.587T4 18v-2q0-.425.288-.712T5 15t.713.288T6 16v2h12v-2q0-.425.288-.712T19 15t.713.288T20 16v2q0 .825-.587 1.413T18 20z'/%3E%3C/svg%3E");
+  }
+  .i-material-symbols-help-rounded {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M12.838 17.638q.362-.363.362-.888t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362t.888-.363M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m.1-14.3q.625 0 1.088.4t.462 1q0 .55-.337.975t-.763.8q-.575.5-1.012 1.1t-.438 1.35q0 .35.263.588t.612.237q.375 0 .638-.25t.337-.625q.1-.525.45-.937t.75-.788q.575-.55.988-1.2t.412-1.45q0-1.275-1.037-2.087T12.1 6q-.95 0-1.812.4T8.975 7.625q-.175.3-.112.638t.337.512q.35.2.725.125t.625-.425q.275-.375.688-.575t.862-.2'/%3E%3C/svg%3E");
   }
   .i-material-symbols-home-outline-rounded {
     display: inline-block;
@@ -534,6 +573,9 @@
   .h-41\.25 {
     height: calc(var(--spacing) * 41.25);
   }
+  .h-65 {
+    height: calc(var(--spacing) * 65);
+  }
   .h-dvh {
     height: 100dvh;
   }
@@ -597,6 +639,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
   }
@@ -629,6 +674,18 @@
   .border-transparent {
     border-color: transparent;
   }
+  .bg-\[\#EF4444\] {
+    background-color: #EF4444;
+  }
+  .bg-\[\#FB7185\] {
+    background-color: #FB7185;
+  }
+  .bg-\[\#FBBF24\] {
+    background-color: #FBBF24;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
   }
@@ -638,11 +695,11 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+  }
   .bg-green-50 {
     background-color: var(--color-green-50);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .bg-transparent {
     background-color: transparent;
@@ -656,6 +713,60 @@
       --tw-gradient-position: to bottom in oklab;
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\.\.\/\'\)\] {
+    background-image: url('../');
+  }
+  .bg-\[url\(\'\.\.\/a\'\)\] {
+    background-image: url('../a');
+  }
+  .bg-\[url\(\'\.\.\/assets\/\'\)\] {
+    background-image: url('../assets/');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/\'\)\] {
+    background-image: url('../assets/images/');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/3\'\)\] {
+    background-image: url('../assets/images/3');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/360\'\)\] {
+    background-image: url('../assets/images/360');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/360_F_237655154_4x3\.jpg\'\)\] {
+    background-image: url('../assets/images/360_F_237655154_4x3.jpg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/T\'\)\] {
+    background-image: url('../assets/images/T');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/TEKKEN\'\)\] {
+    background-image: url('../assets/images/TEKKEN');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/TEKKEN_8_-_Kazuya_Gameplay_Trailer\.webp\'\)\] {
+    background-image: url('../assets/images/TEKKEN_8_-_Kazuya_Gameplay_Trailer.webp');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/Te\'\)\] {
+    background-image: url('../assets/images/Te');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/Tekke\'\)\] {
+    background-image: url('../assets/images/Tekke');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/f\'\)\] {
+    background-image: url('../assets/images/f');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/fg\'\)\] {
+    background-image: url('../assets/images/fg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/fing\'\)\] {
+    background-image: url('../assets/images/fing');
+  }
+  .bg-\[url\(\'\.\.\/assets\/images\/finger\.png\'\)\] {
+    background-image: url('../assets/images/finger.png');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
   }
   .from-brands-light-green {
     --tw-gradient-from: var(--color-brands-light-green);
@@ -707,8 +818,14 @@
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-right {
+    text-align: right;
   }
   .font-brands {
     font-family: var(--font-brands);
