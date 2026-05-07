@@ -8,23 +8,15 @@
     --font-sans: "Inter", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-900: oklch(39.6% 0.141 25.723);
-    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-green-50: oklch(98.2% 0.018 155.826);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-emerald-50: oklch(97.9% 0.021 166.113);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-blue-50: oklch(97% 0.014 254.604);
-    --color-pink-300: oklch(82.3% 0.12 346.018);
-    --color-pink-400: oklch(71.8% 0.202 349.761);
-    --color-pink-500: oklch(65.6% 0.241 354.308);
-    --color-pink-600: oklch(59.2% 0.249 0.584);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -277,6 +269,9 @@
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-22 {
+    margin-top: calc(var(--spacing) * 22);
   }
   .mt-23 {
     margin-top: calc(var(--spacing) * 23);
@@ -683,9 +678,6 @@
   .bg-\[\#FBBF24\] {
     background-color: #FBBF24;
   }
-  .bg-\[url\] {
-    background-color: url;
-  }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
   }
@@ -713,60 +705,6 @@
       --tw-gradient-position: to bottom in oklab;
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
-  }
-  .bg-\[url\(\'\.\.\/\'\)\] {
-    background-image: url('../');
-  }
-  .bg-\[url\(\'\.\.\/a\'\)\] {
-    background-image: url('../a');
-  }
-  .bg-\[url\(\'\.\.\/assets\/\'\)\] {
-    background-image: url('../assets/');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/\'\)\] {
-    background-image: url('../assets/images/');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/3\'\)\] {
-    background-image: url('../assets/images/3');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/360\'\)\] {
-    background-image: url('../assets/images/360');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/360_F_237655154_4x3\.jpg\'\)\] {
-    background-image: url('../assets/images/360_F_237655154_4x3.jpg');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/T\'\)\] {
-    background-image: url('../assets/images/T');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/TEKKEN\'\)\] {
-    background-image: url('../assets/images/TEKKEN');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/TEKKEN_8_-_Kazuya_Gameplay_Trailer\.webp\'\)\] {
-    background-image: url('../assets/images/TEKKEN_8_-_Kazuya_Gameplay_Trailer.webp');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/Te\'\)\] {
-    background-image: url('../assets/images/Te');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/Tekke\'\)\] {
-    background-image: url('../assets/images/Tekke');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/f\'\)\] {
-    background-image: url('../assets/images/f');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/fg\'\)\] {
-    background-image: url('../assets/images/fg');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/fing\'\)\] {
-    background-image: url('../assets/images/fing');
-  }
-  .bg-\[url\(\'\.\.\/assets\/images\/finger\.png\'\)\] {
-    background-image: url('../assets/images/finger.png');
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
   }
   .from-brands-light-green {
     --tw-gradient-from: var(--color-brands-light-green);
