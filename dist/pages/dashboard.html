@@ -37,12 +37,20 @@
             <div
               class="from-brands-light-green flex h-41.25 flex-col justify-between rounded-xl bg-linear-to-b to-emerald-400 p-5 text-white"
             >
-              <h1 class="font-brand text-2xl font-bold">KUSAKU</h1>
-              <h2 class="flex items-center gap-2 text-2xl font-medium">
-                <span>Rp. 52.000.000</span>
+              <h1 class="font-brand text-2xl font-bold uppercase">KUSAKU</h1>
+              <h2
+                class="flex cursor-pointer items-center gap-2 text-2xl font-medium"
+              >
+                <span
+                  data-balance-value="Rp.52.000.000"
+                  data-show-balance="true"
+                  id="balance"
+                  >Rp.52.000.000</span
+                >
                 <button
+                  id="visibilityButton"
                   type="button"
-                  class="i-material-symbols-visibility text-icon-lg"
+                  class="i-material-symbols-visibility text-icon-lg cursor-pointer"
                 ></button>
               </h2>
             </div>
@@ -290,3 +298,5 @@
     </div>
   </body>
 </html>
+
+<script src="../assets/js/main.js"></script>
